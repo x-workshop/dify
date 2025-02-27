@@ -1,0 +1,23 @@
+identity:
+  name: gen_pdf
+  author: BDR
+  label:
+    en_US: Generate PDF
+    zh_Hans: 生成 PDF
+description:
+  human:
+    en_US: Generate PDF.
+    zh_Hans: 生成 PDF。
+  llm: Generate PDF.
+parameters:
+  - name: texts
+    type: textarea
+    required: true
+    label:
+      en_US: text list
+      zh_Hans: text list
+    human_description:
+      en_US: The list of texts to be included in the PDF.
+      zh_Hans: 要包含在 PDF 中的文本列表。
+    llm_description: The list of texts to be included in the PDF.
+    form: form

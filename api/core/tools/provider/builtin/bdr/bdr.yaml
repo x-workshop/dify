@@ -1,0 +1,16 @@
+identity:
+  author: BDR
+  name: bdr
+  label:
+    en_US: BDR
+    zh_Hans: BDR
+    pt_BR: BDR
+  description:
+    en_US: Services on BDR.
+    zh_Hans: BDR的各类服务
+    pt_BR: Services on BDR.
+  icon: icon.svg
+  tags:
+    - other
+    - search
+credentials_for_provider:
