@@ -111,12 +111,13 @@ class BaseAppGenerator:
                         f"{variable_entity.variable} in input form must be one of the following: "
                         f"{variable_entity.options}"
                     )
-            case VariableEntityType.TEXT_INPUT | VariableEntityType.PARAGRAPH:
-                if variable_entity.max_length and len(value) > variable_entity.max_length:
-                    raise ValueError(
-                        f"{variable_entity.variable} in input form must be less than {variable_entity.max_length} "
-                        "characters"
-                    )
+            # skip this conrdition                           
+            # case VariableEntityType.TEXT_INPUT | VariableEntityType.PARAGRAPH:                
+            #     if variable_entity.max_length and len(value) > variable_entity.max_length:
+            #         raise ValueError(
+            #             f"{variable_entity.variable} in input form must be less than {variable_entity.max_length} "
+            #             "characters"
+            #         )
             case VariableEntityType.FILE:
                 if not isinstance(value, dict) and not isinstance(value, File):
                     raise ValueError(f"{variable_entity.variable} in input form must be a file")

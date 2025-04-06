@@ -110,7 +110,7 @@ export const getMaxToken = (modelId: string) => {
 
 export const LOCALE_COOKIE_NAME = 'locale'
 
-export const DEFAULT_VALUE_MAX_LEN = 48
+export const DEFAULT_VALUE_MAX_LEN = 1000
 export const DEFAULT_PARAGRAPH_VALUE_MAX_LEN = 1000
 
 export const zhRegex = /^[\u4E00-\u9FA5]$/m
